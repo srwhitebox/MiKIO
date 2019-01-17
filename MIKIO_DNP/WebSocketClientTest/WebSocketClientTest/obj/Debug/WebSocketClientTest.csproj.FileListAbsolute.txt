@@ -1,0 +1,15 @@
+D:\Dev\MCESS\C#\WebSocketClientTest\WebSocketClientTest\bin\Debug\WebSocketClientTest.exe.config
+D:\Dev\MCESS\C#\WebSocketClientTest\WebSocketClientTest\bin\Debug\WebSocketClientTest.exe
+D:\Dev\MCESS\C#\WebSocketClientTest\WebSocketClientTest\bin\Debug\WebSocketClientTest.pdb
+D:\Dev\MCESS\C#\WebSocketClientTest\WebSocketClientTest\obj\Debug\WebSocketClientTest.csprojResolveAssemblyReference.cache
+D:\Dev\MCESS\C#\WebSocketClientTest\WebSocketClientTest\obj\Debug\WebSocketClientTest.Form1.resources
+D:\Dev\MCESS\C#\WebSocketClientTest\WebSocketClientTest\obj\Debug\WebSocketClientTest.Properties.Resources.resources
+D:\Dev\MCESS\C#\WebSocketClientTest\WebSocketClientTest\obj\Debug\WebSocketClientTest.csproj.GenerateResource.Cache
+D:\Dev\MCESS\C#\WebSocketClientTest\WebSocketClientTest\obj\Debug\WebSocketClientTest.exe
+D:\Dev\MCESS\C#\WebSocketClientTest\WebSocketClientTest\obj\Debug\WebSocketClientTest.pdb
+D:\Dev\MCESS\C#\WebSocketClientTest\WebSocketClientTest\bin\Debug\Newtonsoft.Json.dll
+D:\Dev\MCESS\C#\WebSocketClientTest\WebSocketClientTest\bin\Debug\Apache.NMS.dll
+D:\Dev\MCESS\C#\WebSocketClientTest\WebSocketClientTest\bin\Debug\Apache.NMS.Stomp.dll
+D:\Dev\MCESS\C#\WebSocketClientTest\WebSocketClientTest\bin\Debug\Apache.NMS.pdb
+D:\Dev\MCESS\C#\WebSocketClientTest\WebSocketClientTest\bin\Debug\Apache.NMS.Stomp.pdb
+D:\Dev\MCESS\C#\WebSocketClientTest\WebSocketClientTest\bin\Debug\Apache.NMS.Stomp.xml

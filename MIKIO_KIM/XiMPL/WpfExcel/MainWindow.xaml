@@ -1,0 +1,8 @@
+﻿<Window x:Class="WpfExcel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="508" Width="610"
+        xmlns:osm="http://schemas.awesomium.com/winfx"
+        >
+    <Canvas HorizontalAlignment="Left" Margin="263,154,0,0" VerticalAlignment="Top"/>
+</Window>

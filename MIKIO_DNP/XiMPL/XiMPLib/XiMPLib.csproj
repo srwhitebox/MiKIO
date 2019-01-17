@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FA6B8CF5-4334-408C-BF7B-CF0B83F2F974}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XiMPLib</RootNamespace>
+    <AssemblyName>XiMPLib</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Awesomium.Core, Version=1.7.5.1, Culture=neutral, PublicKeyToken=e1a0d7c8071a5214, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Awesomium Technologies LLC\Awesomium SDK\1.7.5.1\wrappers\Awesomium.NET\Assemblies\Awesomium.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Awesomium.Windows.Controls, Version=1.7.5.1, Culture=neutral, PublicKeyToken=7a34e179b8b61c39, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Awesomium Technologies LLC\Awesomium SDK\1.7.5.1\wrappers\Awesomium.NET\Assemblies\Awesomium.Windows.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Nancy, Version=1.4.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nancy.1.4.4\lib\net40\Nancy.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="PcLinkLibrary">
+      <HintPath>..\packages\pclinklib\PcLinkLibrary.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Controls.Input.Toolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WPFToolkit.3.5.50211.1\lib\System.Windows.Controls.Input.Toolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Layout.Toolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WPFToolkit.3.5.50211.1\lib\System.Windows.Controls.Layout.Toolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Toast, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AndroidToast.1.0.0.2\lib\Toast.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp, Version=1.0.2.32519, Culture=neutral, PublicKeyToken=5660b08a1845a91e, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebSocketSharp-NonPreRelease.1.0.0\lib\net35\websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WpfAnimatedGif, Version=1.4.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WpfAnimatedGif.1.4.14\lib\net\WpfAnimatedGif.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFTextBoxAutoComplete, Version=1.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WPFTextBoxAutoComplete.1.0.5\lib\net40\WPFTextBoxAutoComplete.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WPFToolkit.3.5.50211.1\lib\WPFToolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MiHealth\BmiStandard.cs" />
+    <Compile Include="MiHealth\CheckBoxItem.cs" />
+    <Compile Include="MiHealth\MiHealthCareInfo.cs" />
+    <Compile Include="MiHealth\MiHealthCareList.cs" />
+    <Compile Include="MiHealth\MiHealthClient.cs" />
+    <Compile Include="MiHealth\MiHealthEyeTest2.cs" />
+    <Compile Include="MiHealth\MiHealthEyeTest.cs" />
+    <Compile Include="MiHealth\Nurse.cs" />
+    <Compile Include="MiHealth\xcCampusData.cs" />
+    <Compile Include="MiHealth\xcMiHealth.cs" />
+    <Compile Include="MiHealth\xcMiHealthBoard.cs" />
+    <Compile Include="MiHealth\xcMiHealthResponse.cs" />
+    <Compile Include="MiHIS\BillInfo.cs" />
+    <Compile Include="MiHIS\CalledInfo.cs" />
+    <Compile Include="MiHIS\CalledInfoList.cs" />
+    <Compile Include="MiHIS\Database\OpdProgress.cs" />
+    <Compile Include="MiHIS\Database\RoomInfo.cs" />
+    <Compile Include="MiHIS\Database\RoomList.cs" />
+    <Compile Include="MiHIS\Database\xcHisPhysiologicaMeasuremenRecord.cs" />
+    <Compile Include="MiHIS\HisDept.cs" />
+    <Compile Include="MiHIS\HisDeptList.cs" />
+    <Compile Include="MiHIS\INotifyPropertyChan.cs" />
+    <Compile Include="MiHIS\OpdSchedule.cs" />
+    <Compile Include="MiHIS\OpdScheduleList.cs" />
+    <Compile Include="MiHIS\OpdTime.cs" />
+    <Compile Include="MiHIS\OpdTimeList.cs" />
+    <Compile Include="MiHIS\RegInfo.cs" />
+    <Compile Include="MiHIS\RegInfoList.cs" />
+    <Compile Include="MiHIS\xcHis.cs" />
+    <Compile Include="MiKIO\Mikio.cs" />
+    <Compile Include="MiKIO\Patient.cs" />
+    <Compile Include="MiPHS\PhsAnnouncementList.cs" />
+    <Compile Include="MiPHS\PhsAnnouncementRecord.cs" />
+    <Compile Include="MiPHS\xcPhs.cs" />
+    <Compile Include="MiPHS\xcPhsJArrayResponse.cs" />
+    <Compile Include="MiPHS\xcPhsJsonResponse.cs" />
+    <Compile Include="MiPHS\xcPhsMeasurementRecord.cs" />
+    <Compile Include="MiPHS\xcPhsMeasurementRecordResponse.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="xBinding\AppProperties.cs" />
+    <Compile Include="xBinding\xcBinder.cs" />
+    <Compile Include="xChart\xcPhsChart.cs" />
+    <Compile Include="xChart\xcPhsValue.cs" />
+    <Compile Include="xChart\xcPhsValueList.cs" />
+    <Compile Include="xcSecurity\StringProtector.cs" />
+    <Compile Include="xDevice\FieldOffest.cs" />
+    <Compile Include="xDevice\xBpMeter\AMPAll\BP868F.cs" />
+    <Compile Include="xDevice\xBpMeter\Ampall_BP868F.cs" />
+    <Compile Include="xDevice\xBpMeter\Fora\D40.cs" />
+    <Compile Include="xDevice\xBpMeter\Fora_D40.cs" />
+    <Compile Include="xDevice\xBpMeter\Omron\HBP9020.cs" />
+    <Compile Include="xDevice\xBpMeter\ParamaTech\FT201.cs" />
+    <Compile Include="xDevice\xBpMeter\ParamaTech_F201.cs" />
+    <Compile Include="xDevice\xBpMeter\xcBpMeter.cs" />
+    <Compile Include="xDevice\xBpMeter\xcBpRecord.cs" />
+    <Compile Include="xDevice\xCardReader\SmartCardReader.cs" />
+    <Compile Include="xDevice\xCardReader\xcSmartCardReader.cs" />
+    <Compile Include="xDevice\xcDevice.cs" />
+    <Compile Include="xDevice\xcDeviceList.cs" />
+    <Compile Include="xDevice\xcDeviceWatcher.cs" />
+    <Compile Include="xDevice\xcPacket.cs" />
+    <Compile Include="xDevice\xcPnpDevice.cs" />
+    <Compile Include="xDevice\xcPnpDeviceInfo.cs" />
+    <Compile Include="xDevice\xcRemoteKeyboard.cs" />
+    <Compile Include="xDevice\xcSerialDevice.cs" />
+    <Compile Include="xDevice\xcSerialPort.cs" />
+    <Compile Include="xDevice\xFatAnalyser\CellStyle.cs" />
+    <Compile Include="xDevice\xFatAnalyser\Tanita\BC418.cs" />
+    <Compile Include="xDevice\xFatAnalyser\xcFatCompositionRecord.cs" />
+    <Compile Include="xDevice\xFatAnalyser\xcPhsFatCompositionSheet.cs" />
+    <Compile Include="xDevice\xFatMeter\GTech\GL150.cs" />
+    <Compile Include="xDevice\xFatMeter\GTech_GL150.cs" />
+    <Compile Include="xDevice\xFatMeter\SuperView\HW3030.cs" />
+    <Compile Include="xDevice\xFatMeter\SuperView_HW3030.cs" />
+    <Compile Include="xDevice\xFatMeter\xcFatRecord.cs" />
+    <Compile Include="xDevice\xiDeviceInterface.cs" />
+    <Compile Include="xDevice\xPrinter\xcPrinter.cs" />
+    <Compile Include="xDevice\xPrinter\xcUsbPrinter.cs" />
+    <Compile Include="xDevice\xRemoteKeyboard\Infiniter\LR8R.cs" />
+    <Compile Include="xDocument\xcDataColumn.cs" />
+    <Compile Include="xDocument\xcDictionary.cs" />
+    <Compile Include="xDocument\xcHtml.cs" />
+    <Compile Include="xDocument\xcJObject.cs" />
+    <Compile Include="xDocument\xcJProperty.cs" />
+    <Compile Include="xDocument\xcPrintDocument.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xDocument\xcProperties.cs" />
+    <Compile Include="xDocument\xcXml.cs" />
+    <Compile Include="XiMPL\Global.cs" />
+    <Compile Include="XiMPL\xcEnumUtil.cs" />
+    <Compile Include="XiMPL\xcModelDictionary.cs" />
+    <Compile Include="XiMPL\xcModelParams.cs" />
+    <Compile Include="XiMPL\xcProject.cs" />
+    <Compile Include="XiMPL\xcXimplObject.cs" />
+    <Compile Include="xIO\xcFile.cs" />
+    <Compile Include="xIO\xcPath.cs" />
+    <Compile Include="xNetwork\xcNetwork.cs" />
+    <Compile Include="xNetwork\xcWebClient.cs" />
+    <Compile Include="xShell\xcTaskbar.cs" />
+    <Compile Include="xSpeech\xcSpeech.cs" />
+    <Compile Include="xSystemManagement\xcRole.cs" />
+    <Compile Include="xSystem\xcClock.cs" />
+    <Compile Include="xSystem\xcKeyEvent.cs" />
+    <Compile Include="xThreading\PeriodicTaskFactory.cs" />
+    <Compile Include="xType\xcActionInfo.cs" />
+    <Compile Include="xType\xcAlignment.cs" />
+    <Compile Include="xType\xcBrushes.cs" />
+    <Compile Include="xType\xcCornerRadius.cs" />
+    <Compile Include="xType\xcDataSet.cs" />
+    <Compile Include="xType\xcDateTime.cs" />
+    <Compile Include="xType\xcDecimal.cs" />
+    <Compile Include="xType\xcDrawingBrush.cs" />
+    <Compile Include="xType\xcDrawingColor.cs" />
+    <Compile Include="xType\xcDrawingFont.cs" />
+    <Compile Include="xType\xcDrawingPoint.cs" />
+    <Compile Include="xType\xcDuration.cs" />
+    <Compile Include="xType\xcEventInfo.cs" />
+    <Compile Include="xType\xcHelper.cs" />
+    <Compile Include="xType\xcImage.cs" />
+    <Compile Include="xType\xcImageSources.cs" />
+    <Compile Include="xType\xcLandolf.cs" />
+    <Compile Include="xType\xcLength.cs" />
+    <Compile Include="xType\xcNHICardInfo.cs" />
+    <Compile Include="xType\xcNumber.cs" />
+    <Compile Include="xType\xcObject.cs" />
+    <Compile Include="xType\xcPaperMargins.cs" />
+    <Compile Include="xType\xcPaperSize.cs" />
+    <Compile Include="xType\xcPen.cs" />
+    <Compile Include="xType\xcPlayItem.cs" />
+    <Compile Include="xType\xcProgress.cs" />
+    <Compile Include="xType\xcRange.cs" />
+    <Compile Include="xType\xcRectangle.cs" />
+    <Compile Include="xType\xcSize.cs" />
+    <Compile Include="xType\xcString.cs" />
+    <Compile Include="xType\xcStroke.cs" />
+    <Compile Include="xType\xcThickness.cs" />
+    <Compile Include="xType\xcTrimming.cs" />
+    <Compile Include="xType\xcVisionGrade.cs" />
+    <Compile Include="xType\xcVisualAcuity.cs" />
+    <Compile Include="xUI\Effects\xcDropShadowEffect.cs" />
+    <Compile Include="xUI\Shape\Arc.cs" />
+    <Compile Include="xUI\Shape\xcEllipse.cs" />
+    <Compile Include="xUI\Shape\xcLine.cs" />
+    <Compile Include="xUI\Shape\xcPolygon.cs" />
+    <Compile Include="xUI\Shape\xcRectangle.cs" />
+    <Compile Include="xUI\xcAutoCompleteBox.cs" />
+    <Compile Include="xUI\xcBorder.cs" />
+    <Compile Include="xUI\xcButton.cs" />
+    <Compile Include="xUI\xcButtonColumn.cs" />
+    <Compile Include="xUI\xcCalendar.cs" />
+    <Compile Include="xUI\xcCanvas.cs" />
+    <Compile Include="xUI\xcMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xUI\xcRadioButton.cs" />
+    <Compile Include="xUI\xcCheckbox.cs" />
+    <Compile Include="xUI\xcControl.cs" />
+    <Compile Include="xUI\xcDataGrid.cs" />
+    <Compile Include="xUI\xcDatePicker.cs" />
+    <Compile Include="xUI\xcEditPassword.cs" />
+    <Compile Include="xUI\xcEditText.cs" />
+    <Compile Include="xUI\xcEffect.cs" />
+    <Compile Include="xUI\xcFontProperty.cs" />
+    <Compile Include="xUI\xcGifImage.cs" />
+    <Compile Include="xUI\xcImage.cs" />
+    <Compile Include="xUI\xcImageSlider.cs" />
+    <Compile Include="xUI\xcKeyButton.cs" />
+    <Compile Include="xUI\xcLayout.cs" />
+    <Compile Include="xUI\xcListView.cs" />
+    <Compile Include="xUI\xcMediaPlayer.cs" />
+    <Compile Include="xUI\xcMediaPlayer2.cs" />
+    <Compile Include="xUI\xcProgressWindow.cs" />
+    <Compile Include="xUI\xcScreen.cs" />
+    <Compile Include="xUI\xcStackPanel.cs" />
+    <Compile Include="xUI\xcStyle.cs" />
+    <Compile Include="xUI\xcTextColumn.cs" />
+    <Compile Include="xUI\xcTextView.cs" />
+    <Compile Include="xUI\xcUiElement.cs" />
+    <Compile Include="xUI\xcUiProperty.cs" />
+    <Compile Include="xUI\xcUiUtil.cs" />
+    <Compile Include="xUI\xcWebView.cs" />
+    <Compile Include="xUI\xcWebView2.cs" />
+    <Compile Include="xUI\xcWindow.cs" />
+    <Compile Include="xUI\xStoryBoard\xcAnimation.cs" />
+    <Compile Include="xUI\xStoryBoard\xcStoryBoard.cs" />
+    <Compile Include="xUnit\xcDistanceUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="xDevice\xFatMeter\Omron\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SpringCardPCSC\SpringCardPCSC.csproj">
+      <Project>{ce30ec6e-c60a-42c5-a200-ffe5b10ac2fc}</Project>
+      <Name>SpringCardPCSC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vision_test_type_e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_typeface_e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_typeface_c.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
